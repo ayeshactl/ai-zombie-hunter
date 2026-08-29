@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Fruit Ninja</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <div class="hud">
+
+            <div class="title">
+                🧟 AI ZOMBIE HUNTER
+            </div>
+
+            <div class="score">
+                KILLS:
+                <span id="score">0</span>
+            </div>
+
+        </div>
+
+
+        <canvas id="gameCanvas"></canvas>
+
+
+        <!-- Hidden video used by MediaPipe -->
+
+        <video id="webcam" autoplay playsinline style="display: none;"></video>
+
+
+        <div class="camera-status">
+
+            Camera:
+            <span id="cameraStatus">
+                Starting...
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- MediaPipe -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+
+    <!-- Our game -->
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>
